@@ -1,0 +1,108 @@
+/* Ejemplo de los elementos en un archivo CSS
+Elemento(selector) {
+    propiedad: valor;
+} */
+/* Se puede agrupar los selectores de elementos si el valor es el mismo,
+ separados por una coma. */
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+h1,
+h2 {
+  /* La segunda fuente separada poru una coma es una fuente de respaldo en caso
+  la primera fuente no esté disponible. */
+  font-family: Impact, serif;
+}
+body {
+  /*background-color: burlywood;*/
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px;
+}
+
+/* Selector de id de elementos # */
+/* Es más comun usar un selector de clase que de id */
+.menu {
+  width: 80%; /*300px;*/
+  background-color: burlywood;
+  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto;
+  /* Si el valor es el mismo por los 4 lados se pone paddin solo con el valor:
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; */
+  padding: 20px;
+  /* Ancho maximo de 500px porque al maximizar la pagina los nombres quedan muy 
+  alejados de los nombres */
+  max-width: 500px;
+}
+h1 {
+  font-size: 35px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+h2 {
+  font-size: 25px;
+}
+.desde {
+  font-style: italic;
+}
+hr {
+  height: 1px;
+  background-color: brown;
+  border-color: brown;
+}
+img {
+  margin-top: -15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item p {
+  /* Le da a los elementos de bloque en este caso <p> la propiedad de ser un elemento en
+  en linea. */
+  display: inline-block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+.sabor,
+.postre {
+  text-align: left;
+  width: 75%;
+}
+.precio {
+  text-align: right;
+  width: 24%;
+}
+.bottom-line {
+  margin-top: 25px;
+}
+
+/*FOOTER*/
+footer {
+  font-size: 14px;
+}
+a {
+  color: black;
+}
+/*Pseudoselector visited*/
+a:visited {
+  color: gray;
+}
+/*Pseudoselector hover*/
+a:hover {
+  color: brown;
+}
+/*Pseudoselector active*/
+a:active {
+  color: white;
+}
+.fecha {
+  margin-bottom: 15px;
+}
